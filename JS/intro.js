@@ -1,6 +1,6 @@
 let introID = document.getElementById("intros");
-let intro1 = "<p>Hello!</p><p>I'm <span class='turq-color'>Praneeth Ravuri</span></p>"
-let intro2 = "<p>Computer Science Student</p><p>@ <span class='turq-color'>George Mason University</span></p>";
+let intro1 = "<p class = 'small-size'>Hello!</p><p>I'm <span class='turq-color'>Praneeth Ravuri</span></p>"
+let intro2 = "<p class = 'small-size'>Master's in Computer Science Student</p><p>@ <span class='turq-color'>George Mason University</span></p>";
 let isIntro1 = true;
 
 function keepFading() {

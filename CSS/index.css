@@ -63,10 +63,19 @@ header {
 
 #intros {
   text-align: left;
+  width: 100%;
 }
 
 #intros p, #intros span {
-  font-size: 3rem;
+  font-size: 4.5rem;
+}
+
+#intros span {
+  font-weight: bold;
+}
+
+#intros .small-size {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
