@@ -10,12 +10,17 @@
   font-size: 1.15rem;
 }
 
+body {
+  width: 80%;
+  margin: auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  width: 75%;
+  width: 100%;
   margin: auto;
   padding: 2.5rem 1rem;
 }
@@ -42,6 +47,26 @@ header {
 .menu-items a:hover {
   color: #40E0D0;
   border-bottom: 0.3rem solid #40E0D0;
+}
+
+#introduction {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turq-color {
+  color: #40E0D0;
+}
+
+#intros {
+  text-align: left;
+}
+
+#intros p, #intros span {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */
