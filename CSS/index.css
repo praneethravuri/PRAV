@@ -39,6 +39,12 @@ header {
   color: #40E0D0;
   font-weight: bold;
   font-size: 1.5rem;
+  font-style: italic;
+  transition: all 0.3s ease 0s;
+}
+
+#main-title:hover {
+  color: white;
 }
 
 .menu-items a {
@@ -50,7 +56,7 @@ header {
 }
 
 #introduction {
-  height: 80vh;
+  height: 70vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -76,6 +82,50 @@ header {
 
 #intros .small-size {
   font-size: 2rem;
+}
+
+.link-btn {
+  text-align: center;
+  /* Responsive adjustments */
+}
+.link-btn .link {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #40E0D0;
+  background-color: #40E0D0;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+}
+.link-btn .link-logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: #40E0D0;
+  text-align: center;
+}
+.link-btn .link-text {
+  color: black;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 1.15rem;
+  transition: all 0.3s ease 0s;
+  background-color: #40E0D0;
+  flex-grow: 1;
+  text-align: center;
+}
+.link-btn .link-hover {
+  background-color: #21ccbb;
+}
+@media (max-width: 480px) {
+  .link-btn {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

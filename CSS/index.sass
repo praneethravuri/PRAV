@@ -41,6 +41,11 @@ header
   color: $turquoise-blue
   font-weight: bold
   font-size: 1.5rem
+  font-style: italic
+  transition: all 0.3s ease 0s
+
+#main-title:hover
+  color: white
 
 .menu-items
   a
@@ -51,7 +56,7 @@ header
         border-bottom: 0.3rem solid $turquoise-blue
 
 #introduction
-  height: 80vh
+  height: 70vh
   text-align: center
   display: flex
   justify-content: center
@@ -76,3 +81,49 @@ header
 #intros
   .small-size
     font-size: 2rem
+
+$link-color: $turquoise-blue
+$button-spacing: 2px /* Updated spacing value */
+
+.link-btn 
+  text-align: center
+
+  .link 
+    display: inline-block
+    padding: 10px 20px
+    border-radius: 5px
+    text-decoration: none
+    transition: all 0.3s ease 0s
+    border: 2px solid $link-color
+    background-color: $link-color
+    width: 100% /* Take full width on smaller screens */
+    max-width: 200px /* Limit the maximum width */
+    text-align: center
+    margin: 0px 10px 0px 10px
+
+    &-logo 
+      width: 2rem
+      height: 2rem
+      margin-right: 5px
+      vertical-align: middle
+      background-color: $link-color
+      text-align: center
+    
+
+    &-text
+      color: black
+      font-weight: bold
+      vertical-align: middle
+      font-size: 1.15rem
+      transition: all 0.3s ease 0s
+      background-color: $link-color
+      flex-grow: 1 /* Expand to fill remaining space */
+      text-align: center
+
+    &-hover
+      background-color: darken($link-color, 10%)
+    
+
+  /* Responsive adjustments */
+  @media (max-width: 480px)
+    max-width: 100% /* Take full width on smaller screens */
