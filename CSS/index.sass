@@ -3,6 +3,9 @@
 $turquoise-blue: #40E0D0
 $poppins-font: 'Poppins', sans-serif
 
+html
+  scroll-behavior: smooth
+
 *
   box-sizing: border-box
   padding: 0
@@ -65,9 +68,9 @@ header
 
 .turq-color
   color: $turquoise-blue
+  font-style: italic
 
 #intros
-  text-align: left
   width: 100%
   
 #intros
@@ -90,7 +93,7 @@ $button-spacing: 2px /* Updated spacing value */
 
   .link 
     display: inline-block
-    padding: 10px 20px
+    padding: 5px
     border-radius: 5px
     text-decoration: none
     transition: all 0.3s ease 0s
@@ -104,26 +107,37 @@ $button-spacing: 2px /* Updated spacing value */
     &-logo 
       width: 2rem
       height: 2rem
-      margin-right: 5px
       vertical-align: middle
       background-color: $link-color
       text-align: center
+      transition: all 0.3s ease 0s
     
 
     &-text
       color: black
       font-weight: bold
       vertical-align: middle
-      font-size: 1.15rem
+      font-size: 1rem
       transition: all 0.3s ease 0s
       background-color: $link-color
       flex-grow: 1 /* Expand to fill remaining space */
       text-align: center
-
-    &-hover
-      background-color: darken($link-color, 10%)
     
 
   /* Responsive adjustments */
   @media (max-width: 480px)
     max-width: 100% /* Take full width on smaller screens */
+
+.link:hover
+  background-color: lighten($link-color, 20%)
+
+
+.link:hover .link-text,
+.link:hover .link-logo
+  background-color: lighten($link-color, 20%)
+
+
+
+.hr-line
+  color: $turquoise-blue
+  margin: 50px
