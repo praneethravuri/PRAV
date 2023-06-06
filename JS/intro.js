@@ -17,3 +17,19 @@ function keepFading() {
 }
 
 keepFading();
+
+/*
+const linkedinLogo = document.getElementById('linkedin-logo');
+const linkedinimg = document.getElementById('linkedin-img');
+const hoverImageSrc = './Images/Logos/github-black.svg';
+const defaultImageSrc = './Images/Logos/linkedin-black.svg';
+
+linkedinLogo.addEventListener('mouseover', function() {
+  linkedinimg.src = hoverImageSrc;
+});
+
+linkedinLogo.addEventListener('mouseout', function() {
+  linkedinimg.src = defaultImageSrc;
+
+});
+*/

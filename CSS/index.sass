@@ -2,6 +2,9 @@
 
 $turquoise-blue: #40E0D0
 $poppins-font: 'Poppins', sans-serif
+$light-gray: rgba(255, 255, 255, 0.1)
+
+// html, body, *
 
 html
   scroll-behavior: smooth
@@ -20,6 +23,9 @@ body
   width: 80%
   margin: auto
 
+
+// navbar
+
 header
   display: flex
   justify-content: space-between
@@ -28,6 +34,8 @@ header
   width: 100%
   margin: auto
   padding: 2.5rem 1rem
+  background-color: black
+  height: 10vh
 
 .nav-links
   li
@@ -58,6 +66,8 @@ header
         color: $turquoise-blue
         border-bottom: 0.3rem solid $turquoise-blue
 
+// Introduction
+
 #introduction
   height: 70vh
   text-align: center
@@ -69,6 +79,7 @@ header
 .turq-color
   color: $turquoise-blue
   font-style: italic
+  text-shadow: -5px 0px 1px white
 
 #intros
   width: 100%
@@ -76,6 +87,7 @@ header
 #intros
   p, span
     font-size: 4.5rem
+    
 
 #intros
   span
@@ -84,6 +96,9 @@ header
 #intros
   .small-size
     font-size: 2rem
+
+
+// link buttons
 
 $link-color: $turquoise-blue
 $button-spacing: 2px /* Updated spacing value */
@@ -136,8 +151,29 @@ $button-spacing: 2px /* Updated spacing value */
 .link:hover .link-logo
   background-color: lighten($link-color, 20%)
 
+// hr lines
 
-
-.hr-line
+.section-separator  
   color: $turquoise-blue
-  margin: 50px
+  margin: 30px
+
+.title-separator
+  color: $turquoise-blue
+  margin: 0px auto 20px auto
+  width: 50%
+
+// title templates
+
+#section-title
+  text-align: center
+  margin-top: 100px
+
+.title
+  font-size: 3.5rem
+  font-weight: bold
+  font-style: italic
+  color: white
+  text-shadow: -5px 0px 1px $turquoise-blue
+
+
+// skills & tools boxes

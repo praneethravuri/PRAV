@@ -27,6 +27,8 @@ header {
   width: 100%;
   margin: auto;
   padding: 2.5rem 1rem;
+  background-color: black;
+  height: 10vh;
 }
 
 .nav-links li {
@@ -70,6 +72,7 @@ header {
 .turq-color {
   color: #40E0D0;
   font-style: italic;
+  text-shadow: -5px 0px 1px white;
 }
 
 #intros {
@@ -138,9 +141,28 @@ header {
   background-color: #98eee6;
 }
 
-.hr-line {
+.section-separator {
   color: #40E0D0;
-  margin: 50px;
+  margin: 30px;
+}
+
+.title-separator {
+  color: #40E0D0;
+  margin: 0px auto 20px auto;
+  width: 50%;
+}
+
+#section-title {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: -5px 0px 1px #40E0D0;
 }
 
 /*# sourceMappingURL=index.css.map */
