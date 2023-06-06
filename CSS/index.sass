@@ -31,11 +31,15 @@ header
   justify-content: space-between
   align-items: center
   padding: 10px 0px
-  width: 100%
+  width: 80%
   margin: auto
   padding: 2.5rem 1rem
   background-color: black
   height: 10vh
+  z-index: 1
+  position: fixed
+  top: 0
+  
 
 .nav-links
   li
@@ -69,6 +73,7 @@ header
 // Introduction
 
 #introduction
+  margin-top: 60px
   height: 70vh
   text-align: center
   display: flex
@@ -97,59 +102,34 @@ header
   .small-size
     font-size: 2rem
 
-
 // link buttons
 
-$link-color: $turquoise-blue
-$button-spacing: 2px /* Updated spacing value */
-
-.link-btn 
+.link-btns
   text-align: center
+  margin-top: 10px
+  margin-bottom: 50px
 
-  .link 
-    display: inline-block
-    padding: 5px
+.link-btns
+  a
+    padding: 10px 30px
+    margin: 10px
+    border: 2px solid black
     border-radius: 5px
-    text-decoration: none
+    background-color: $turquoise-blue
+    box-sizing: border-box
+    font-weight: bold
+    font-style: italic
+    color: black
     transition: all 0.3s ease 0s
-    border: 2px solid $link-color
-    background-color: $link-color
-    width: 100% /* Take full width on smaller screens */
-    max-width: 200px /* Limit the maximum width */
-    text-align: center
-    margin: 0px 10px 0px 10px
 
-    &-logo 
-      width: 2rem
-      height: 2rem
-      vertical-align: middle
-      background-color: $link-color
-      text-align: center
-      transition: all 0.3s ease 0s
-    
-
-    &-text
-      color: black
-      font-weight: bold
-      vertical-align: middle
-      font-size: 1rem
-      transition: all 0.3s ease 0s
-      background-color: $link-color
-      flex-grow: 1 /* Expand to fill remaining space */
-      text-align: center
-    
-
-  /* Responsive adjustments */
-  @media (max-width: 480px)
-    max-width: 100% /* Take full width on smaller screens */
-
-.link:hover
-  background-color: lighten($link-color, 20%)
+.link-btns
+  a:hover
+    background-color: black
+    color: $turquoise-blue
+    border: 2px solid white
 
 
-.link:hover .link-text,
-.link:hover .link-logo
-  background-color: lighten($link-color, 20%)
+
 
 // hr lines
 

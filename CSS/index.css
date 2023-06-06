@@ -24,11 +24,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  width: 100%;
+  width: 80%;
   margin: auto;
   padding: 2.5rem 1rem;
   background-color: black;
   height: 10vh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
 }
 
 .nav-links li {
@@ -62,6 +65,7 @@ header {
 }
 
 #introduction {
+  margin-top: 60px;
   height: 70vh;
   text-align: center;
   display: flex;
@@ -91,54 +95,29 @@ header {
   font-size: 2rem;
 }
 
-.link-btn {
+.link-btns {
   text-align: center;
-  /* Responsive adjustments */
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
-.link-btn .link {
-  display: inline-block;
-  padding: 5px;
+
+.link-btns a {
+  padding: 10px 30px;
+  margin: 10px;
+  border: 2px solid black;
   border-radius: 5px;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-  border: 2px solid #40E0D0;
   background-color: #40E0D0;
-  width: 100%;
-  max-width: 200px;
-  text-align: center;
-  margin: 0px 10px 0px 10px;
-}
-.link-btn .link-logo {
-  width: 2rem;
-  height: 2rem;
-  vertical-align: middle;
-  background-color: #40E0D0;
-  text-align: center;
-  transition: all 0.3s ease 0s;
-}
-.link-btn .link-text {
-  color: black;
+  box-sizing: border-box;
   font-weight: bold;
-  vertical-align: middle;
-  font-size: 1rem;
+  font-style: italic;
+  color: black;
   transition: all 0.3s ease 0s;
-  background-color: #40E0D0;
-  flex-grow: 1;
-  text-align: center;
-}
-@media (max-width: 480px) {
-  .link-btn {
-    max-width: 100%;
-  }
 }
 
-.link:hover {
-  background-color: #98eee6;
-}
-
-.link:hover .link-text,
-.link:hover .link-logo {
-  background-color: #98eee6;
+.link-btns a:hover {
+  background-color: black;
+  color: #40E0D0;
+  border: 2px solid white;
 }
 
 .section-separator {
