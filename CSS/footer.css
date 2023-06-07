@@ -1,0 +1,51 @@
+.footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.location {
+  color: white;
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.quick-links {
+  color: white;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 5px;
+}
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+ul a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=footer.css.map */

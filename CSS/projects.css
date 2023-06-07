@@ -11,6 +11,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
+#repo-details tbody img {
+  width: 20%;
+  margin: auto;
+}
 
 #repo-details thead th {
   color: #40E0D0;
@@ -25,4 +29,9 @@
 #hc-link a {
   color: #40E0D0;
   font-weight: bold;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px 25px;
 }/*# sourceMappingURL=projects.css.map */

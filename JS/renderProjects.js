@@ -35,16 +35,14 @@ githubRepos(username)
       const repo = repos[i];
       if (repo.name != "praneethravuri") {
         const languages = await getLanguages(repo.name);
-        const createdAt = repo.created_at.slice(0, 4);
 
         const currRepoName = repo.name.replace(/-/g, " ");
 
         $("#repo-details tbody").append(`
           <tr>
             <td>${currRepoName}</td>
-            <td>${createdAt}</td>
             <td>${languages.join(", ")}</td>
-            <td><a href="${repo.html_url}">Link</a></td>
+            <td><a href="${repo.html_url}"><img src="./Images/Skills-Tools-Images/Github.svg" alt=""></a></td>
           </tr>
         `);
       }
@@ -53,3 +51,21 @@ githubRepos(username)
   .catch((error) => {
     console.error("An error occurred:", error);
   });
+
+async function readJSONFile(url) {
+  const data = await $.getJSON(url);
+  return data;
+}
+
+let privateRepos = await readJSONFile("../JSON/privateRepoProjects.json");
+console.log(privateRepos);
+
+for (let repo in privateRepos) {
+  $("#repo-details tbody").append(`
+      <tr>
+        <td>${repo}*</td>
+        <td>${privateRepos[repo].languages.join(", ")}</td>
+        <td>Private</td>
+      </tr>
+    `);
+}
