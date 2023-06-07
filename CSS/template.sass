@@ -27,37 +27,31 @@ body
 #introduction
   margin-top: 60px
   height: 70vh
-  text-align: center
   display: flex
-  justify-content: center
+  text-align: left
   align-items: center
 
-.turq-color
-  color: $turquoise-blue
-  font-style: italic
-  text-shadow: -5px 0px 1px white
+#introduction
+  p
+    color: whitesmoke
 
-#intros
-  width: 100%
+.intro
+  display: block
 
-#intros
-  p, span
-    font-size: 4.5rem
+.small-size
+  font-size: 1rem
 
-#intros
-  span
-    font-weight: bold
+.turq-blue
+  font-size: 5rem
+  text-shadow: -5px 0px 1px $turquoise-blue
 
-#intros
-  .small-size
-    font-size: 2rem
-
-
+.small-about-me
+  width: 75%
 
 // link buttons
 
 .link-btns
-  text-align: center
+  text-align: left
   margin-top: 10px
   margin-bottom: 50px
 
@@ -65,20 +59,20 @@ body
   a
     padding: 10px 30px
     margin: 10px
-    border: 2px solid black
+    border: 1px solid $turquoise-blue
     border-radius: 5px
-    background-color: $turquoise-blue
+    background-color: black
     box-sizing: border-box
-    font-weight: bold
-    font-style: italic
-    color: black
+    font-weight: 500
+    color: white
     transition: all 0.3s ease 0s
 
 .link-btns
   a:hover
     background-color: black
     color: $turquoise-blue
-    border: 2px solid white
+    border: 1px solid white
+    box-shadow: 5px 8px $turquoise-blue
 
 // hr lines templates
 
@@ -100,6 +94,9 @@ body
 .title
   font-size: 3.5rem
   font-weight: bold
-  font-style: italic
   color: white
-  text-shadow: -5px 0px 1px $turquoise-blue
+  position: relative
+
+.about-me-text
+  width: 75%
+  margin: auto
