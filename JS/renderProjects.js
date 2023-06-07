@@ -13,23 +13,41 @@ export async function githubRepos(username) {
   }
 }
 
+export async function getLanguages(repoName) {
+  let languageURL = `https://api.github.com/repos/praneethravuri/${repoName}/languages`;
+  try {
+    const response = await fetch(languageURL);
+
+    if (!response.ok) throw new Error("Failed to fetch the repository details");
+
+    const languages = await response.json();
+    return Object.keys(languages);
+  } catch (error) {
+    return [];
+  }
+}
+
 const username = "praneethravuri";
 
 githubRepos(username)
-  .then((repos) => {
-    console.log(repos);
+  .then(async (repos) => {
     for (let i = 0; i < repos.length; i++) {
-      $("#repo-details").append(
-        `
-            <li> Project ${i + 1} </li>
-            <ul>
-                <li> <a href="${repos[i].html_url}">${repos[i].name}</a> </li>
-                <li> ${repos[i].created_at} </li>
-                <li> ${repos[i].description} </li>
-                <li> ${repos[i].stargazers_count} </li>
-            </ul>
-            `
-      );
+      const repo = repos[i];
+      if (repo.name != "praneethravuri") {
+        const languages = await getLanguages(repo.name);
+        const createdAt = repo.created_at.slice(0, 4);
+
+        const currRepoName = repo.name.replace(/-/g, " ");
+
+        $("#repo-details tbody").append(`
+          <tr>
+            <td>${currRepoName}</td>
+            <td>${createdAt}</td>
+            <td>${languages.join(", ")}</td>
+            <td><a href="${repo.html_url}">Link</a></td>
+          </tr>
+        `);
+      }
     }
   })
   .catch((error) => {

@@ -1,0 +1,28 @@
+#repo-details {
+  width: 100%;
+}
+
+#repo-details tr td, #repo-details tr th {
+  text-align: left;
+  margin: 5px;
+}
+
+#repo-details tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#repo-details thead th {
+  color: #40E0D0;
+}
+
+#disclaimer, #hc-link a {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#hc-link a {
+  color: #40E0D0;
+  font-weight: bold;
+}/*# sourceMappingURL=projects.css.map */

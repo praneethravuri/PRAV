@@ -1,0 +1,10 @@
+{
+    "Horizon Airlines Bookings" : {
+        "year" : 2023,
+        "tech stack" : ["Python", "HTML", "CSS", "Javascript", "Jquery", "MongoDB", "Flask"]
+    },
+    "Patriot Board" : {
+        "year" : 2023,
+        "tech stack" : ["HTML", "CSS", "Javascript", "Jquery", "Java"]
+    }
+}
