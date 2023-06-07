@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  width: 80%;
+  margin: auto;
+  padding: 2.5rem 1rem;
+  background-color: black;
+  height: 10vh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+li {
+  display: inline-block;
+  color: whitesmoke;
+  padding: 0px 10px 0px 10px;
+}
+
+li a {
+  transition: all 0.3s ease 0s;
+}
+
+#main-title {
+  color: #40E0D0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  transition: all 0.3s ease 0s;
+}
+
+#main-title:hover {
+  color: white;
+  border-bottom: none;
+}
+
+a {
+  transition: all 0.3s ease 0s;
+}
+a:hover {
+  color: #40E0D0;
+  border-bottom: 0.3rem solid #40E0D0;
+}/*# sourceMappingURL=navbar.css.map */

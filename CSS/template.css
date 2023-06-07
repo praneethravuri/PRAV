@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+#introduction {
+  margin-top: 60px;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turq-color {
+  color: #40E0D0;
+  font-style: italic;
+  text-shadow: -5px 0px 1px white;
+}
+
+#intros {
+  width: 100%;
+}
+
+#intros p, #intros span {
+  font-size: 4.5rem;
+}
+
+#intros span {
+  font-weight: bold;
+}
+
+#intros .small-size {
+  font-size: 2rem;
+}
+
+.link-btns {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.link-btns a {
+  padding: 10px 30px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #40E0D0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.link-btns a:hover {
+  background-color: black;
+  color: #40E0D0;
+  border: 2px solid white;
+}
+
+.section-separator {
+  color: #40E0D0;
+  margin: 30px;
+}
+
+.title-separator {
+  color: #40E0D0;
+  margin: 0px auto 20px auto;
+  width: 50%;
+}
+
+#section-title {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: -5px 0px 1px #40E0D0;
+}/*# sourceMappingURL=template.css.map */
