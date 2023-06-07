@@ -1,0 +1,22 @@
+{
+    "Python" : "link",
+    "C" : "link",
+    "C++" : "link",
+    "HTML" : "link",
+    "CSS" : "link",
+    "Javascript" : "link",
+    "JSONiq" : "link",
+    "Zorba" : "link",
+    "Bootstrap" : "link",
+    "SQL" : "link",
+    "Node JS" : "link",
+    "Jest" : "link",
+    "JQuery" : "link",
+    "Sass" : "link",
+    "Adobe Premier Pro" : "link",
+    "Gimp" : "link",
+    "Git" : "link",
+    "GitHub" : "link",
+    "VS Code" : "link",
+    "PyCharm" : "link"
+}
