@@ -1,12 +1,17 @@
 #disclaimer,
 #hc-link a {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   text-align: center;
   margin-bottom: 20px;
 }
 
 #disclaimer a {
-  color: #40E0D0;
+  color: #ffbd39;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+#disclaimer a:hover {
+  border-bottom: 0.3rem solid #ffbd39;
 }
 
 .card-container {
@@ -16,10 +21,12 @@
 }
 
 .card {
+  height: 275px;
   flex-basis: calc(50% - 10px);
   margin-bottom: 10px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 .card-heading {
   font-size: 24px;
@@ -30,13 +37,17 @@
   margin-bottom: 20px;
 }
 .card-images {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
   margin-right: 10px;
 }
 .card-images img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-right: 5px;
-}
-.card-images img {
-  width: 7%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=projects.css.map */

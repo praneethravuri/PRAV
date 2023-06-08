@@ -1,18 +1,17 @@
 $light-gray: rgba(255, 255, 255, 0.1)
+$orange: #ffbd39
 
-#skills-div 
+#skills-div
   display: flex
   flex-wrap: wrap
 
-
-#skills-list 
+#skills-list
   list-style-type: none
   display: flex
   justify-content: space-between
   width: 100%
 
-
-.skill 
+.skill
   display: flex
   flex-direction: column
   align-items: center
@@ -24,14 +23,21 @@ $light-gray: rgba(255, 255, 255, 0.1)
   margin-bottom: 10px
   margin: 5px
   background-color: $light-gray
+  transition: all 0.3s ease 0s
 
+  &:hover
 
-.skill img 
-  max-width: 100px
-  max-height: 100px
-  margin-bottom: 10px
+    span
+      color: $orange
 
+  & img
+    max-width: 100px
+    max-height: 100px
+    margin-bottom: 10px
 
-.skill span 
-  font-weight: 500
+  & span
+    font-weight: 500
+    transition: all 0.3s ease 0s
 
+  & span:hover
+    color: $orange

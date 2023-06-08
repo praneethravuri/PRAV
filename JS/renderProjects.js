@@ -88,6 +88,7 @@ try {
     for (let j = 0; j<privateRepos[repo].languages.length; j++) {
       const languageImage = $("<img>").attr({
         src: `./Images/Skills-Tools-Images/${privateRepos[repo].languages[j]}.svg`,
+
       });
       cardImages.append(languageImage);
     }

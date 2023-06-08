@@ -6,6 +6,7 @@
     },
     "Patriot Board" : {
         "year" : 2023,
-        "languages" : ["HTML", "CSS", "Javascript", "Jquery", "Java"]
+        "languages" : ["HTML", "CSS", "Javascript", "Jquery", "Java"],
+        "description" : "sdfsfsafsaf"
     }
 }

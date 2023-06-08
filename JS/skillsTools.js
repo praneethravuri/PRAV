@@ -5,10 +5,7 @@ let skillsToolsList = [
   "HTML",
   "CSS",
   "Javascript",
-  "JSONiq",
-  "Zorba",
   "Bootstrap",
-  "SQL",
   "Node JS",
   "Java",
   "JQuery",
@@ -18,7 +15,10 @@ let skillsToolsList = [
   "Git",
   "GitHub",
   "VS Code",
+  "SQL",
   "PyCharm",
+  "JSONiq",
+  "Zorba"
 ];
 
 let skillsDiv = document.getElementById("skills-div");
