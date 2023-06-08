@@ -2,10 +2,6 @@
 
 [Website Link](https://snazzy-cocada-b041d4.netlify.app/)
 
-## Link Buttons
-
-The link buttons (LinkedIn, Github, Email, and Resume) are all dynamically generated using `linkButtons.json` file. The name and the link values can be easily changed by changing the contents of the json file.
-
 ## Skills & Tools
 
 The skills and tools cards are also dynamically generated with the help of an array in `skillsTools.js` file
