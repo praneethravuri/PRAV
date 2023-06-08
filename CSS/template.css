@@ -37,7 +37,7 @@ body {
 
 .turq-blue {
   font-size: 5rem;
-  text-shadow: -5px 0px 1px #40E0D0;
+  text-shadow: -5px 0px 1px #ffbd39;
 }
 
 .small-about-me {
@@ -53,7 +53,7 @@ body {
 .link-btns a {
   padding: 10px 30px;
   margin: 10px;
-  border: 1px solid #40E0D0;
+  border: 1px solid #ffbd39;
   border-radius: 5px;
   background-color: black;
   box-sizing: border-box;
@@ -64,18 +64,18 @@ body {
 
 .link-btns a:hover {
   background-color: black;
-  color: #40E0D0;
+  color: #ffbd39;
   border: 1px solid white;
-  box-shadow: 5px 8px #40E0D0;
+  box-shadow: 5px 8px #ffbd39;
 }
 
 .section-separator {
-  color: #40E0D0;
+  color: #ffbd39;
   margin: 30px;
 }
 
 .title-separator {
-  color: #40E0D0;
+  color: #ffbd39;
   margin: 0px auto 20px auto;
   width: 50%;
 }

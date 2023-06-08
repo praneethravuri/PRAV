@@ -24,7 +24,7 @@ li a {
 }
 
 #main-title {
-  color: #40E0D0;
+  color: #ffbd39;
   font-weight: bold;
   font-size: 1.5rem;
   font-style: italic;
@@ -40,6 +40,6 @@ a {
   transition: all 0.3s ease 0s;
 }
 a:hover {
-  color: #40E0D0;
-  border-bottom: 0.3rem solid #40E0D0;
+  color: #ffbd39;
+  border-bottom: 0.3rem solid #ffbd39;
 }/*# sourceMappingURL=navbar.css.map */
