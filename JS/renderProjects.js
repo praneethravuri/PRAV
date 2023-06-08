@@ -72,11 +72,8 @@ async function readJSONFile(url) {
 
 try {
   let privateRepos = await readJSONFile("../JSON/privateRepoProjects.json");
-  console.log(privateRepos);
 
   for (let repo in privateRepos) {
-    console.log(repo.description);
-    console.log(repo.languages);
     const card = $("<div>").addClass("card");
     const cardHeading = $("<h2>").addClass("card-heading");
     const cardDescription = $("<p>").addClass("card-description");
