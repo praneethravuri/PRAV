@@ -77,6 +77,9 @@
   color: #ffbd39;
   border-bottom: 0.3rem solid #ffbd39;
 }
+.card-heading h2 {
+  font-weight: bold;
+}
 
 .external-link {
   width: 4.5%;

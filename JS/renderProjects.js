@@ -52,7 +52,7 @@ export async function renderRepoDetails(username) {
   }
 
   try {
-    const privateRepos = await readJSONFile("../JSON/privateRepoProjects.json");
+    const privateRepos = await readJSONFile("../data/privateRepoProjects.json");
 
     for (let repo in privateRepos) {
       const currRepoName = `${repo}*`;
@@ -88,7 +88,7 @@ renderRepoDetails(username)
       const cardImages = $("<div>").addClass("card-images");
 
       if (details.html_url) {
-        cardHeading.html(`<a href="${details.html_url}" target="_blank">${repo}&nbsp;&nbsp;<span ><img src="./Images/external-link.svg" class="external-link"></span></a>`);
+        cardHeading.html(`<a href="${details.html_url}" target="_blank">${repo}&nbsp;&nbsp;<span ><img src="../public/images/external-link.svg" class="external-link"></span></a>`);
       } else {
         cardHeading.html(`<h2 class="class-heading">${repo}</h2>`);
       }
@@ -101,7 +101,7 @@ renderRepoDetails(username)
 
       for (let j = 0; j < details.languages.length; j++) {
         const languageImage = $("<img>").attr({
-          src: `./Images/Skills-Tools-Images/${details.languages[j]}.svg`,
+          src: `../assets/icons/${details.languages[j]}.svg`,
         });
         cardImages.append(languageImage);
       }

@@ -35,7 +35,7 @@ for (let i = 0; i < skillsToolsList.length; i += 1) {
     listItem.className = "skill";
 
     let img = document.createElement("img");
-    img.src = `./Images/Skills-Tools-Images/${skillsToolsList[j]}.svg`; // Replace with the actual image path
+    img.src = `./assets/icons/${skillsToolsList[j]}.svg`; // Replace with the actual image path
     img.alt = "";
     listItem.appendChild(img);
 
