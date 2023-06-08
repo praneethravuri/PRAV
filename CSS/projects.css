@@ -50,4 +50,20 @@
   margin-right: 5px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-heading {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.year {
+  margin-right: 10px;
+  color: #ffbd39;
 }/*# sourceMappingURL=projects.css.map */
