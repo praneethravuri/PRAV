@@ -10,7 +10,7 @@ let skillsToolsList = [
   "Bootstrap",
   "SQL",
   "Node JS",
-  "Jest",
+  "Java",
   "JQuery",
   "Sass",
   "Adobe Premiere Pro",

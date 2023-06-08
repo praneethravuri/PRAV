@@ -1,7 +1,8 @@
 {
     "Horizon Airlines Bookings" : {
         "year" : 2023,
-        "languages" : ["Python", "HTML", "CSS", "Javascript", "Jquery", "MongoDB", "Flask"]
+        "languages" : ["Python", "HTML", "CSS", "Javascript", "Jquery", "MongoDB"],
+        "description" : "Horizon Airlines Bookings is a Flask and MongoDB web app that streamlines flight bookings and management. Users can view flights, apply promo codes, and update personal info. The site has login authentication and account deletion options. This project is for the INFS 740 course at George Mason University, Spring 2023. "
     },
     "Patriot Board" : {
         "year" : 2023,

@@ -1,37 +1,42 @@
-#repo-details {
-  width: 100%;
-}
-
-#repo-details tr td, #repo-details tr th {
-  text-align: left;
-  margin: 5px;
-}
-
-#repo-details tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-#repo-details tbody img {
-  width: 20%;
-  margin: auto;
-}
-
-#repo-details thead th {
-  color: #40E0D0;
-}
-
-#disclaimer, #hc-link a {
+#disclaimer,
+#hc-link a {
   font-size: 0.75rem;
   text-align: center;
   margin-bottom: 20px;
 }
 
-#hc-link a {
+#disclaimer a {
   color: #40E0D0;
-  font-weight: bold;
 }
 
-table {
-  border-collapse: separate;
-  border-spacing: 0px 25px;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.card-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card-images {
+  margin-right: 10px;
+}
+.card-images img {
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+}
+.card-images img {
+  width: 7%;
 }/*# sourceMappingURL=projects.css.map */

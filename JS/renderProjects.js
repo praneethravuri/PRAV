@@ -38,13 +38,25 @@ githubRepos(username)
 
         const currRepoName = repo.name.replace(/-/g, " ");
 
-        $("#repo-details tbody").append(`
-          <tr>
-            <td>${currRepoName}</td>
-            <td>${languages.join(", ")}</td>
-            <td><a href="${repo.html_url}"><img src="./Images/Skills-Tools-Images/Github.svg" alt=""></a></td>
-          </tr>
-        `);
+        const card = $("<div>").addClass("card");
+        const cardHeading = $("<h2>").addClass("card-heading");
+        const cardDescription = $("<p>").addClass("card-description");
+        const cardImages = $("<div>").addClass("card-images");
+
+        cardHeading.html(`<a href="${repo.html_url}">${currRepoName}</a>`);
+        cardDescription.text(repo.description);
+
+        for (let j = 0; j < languages.length; j++) {
+          let languageImage = $("<img>").attr({
+            src: `./Images/Skills-Tools-Images/${languages[j]}.svg`,
+            alt: languages[j],
+          });
+          let imageLogo = languageImage.addClass("image-logo");
+          cardImages.append(languageImage);
+        }
+
+        card.append(cardHeading, cardDescription, cardImages);
+        $(".card-container").append(card);
       }
     }
   })
@@ -53,19 +65,36 @@ githubRepos(username)
   });
 
 async function readJSONFile(url) {
-  const data = await $.getJSON(url);
+  const response = await fetch(url);
+  const data = await response.json();
   return data;
 }
 
-let privateRepos = await readJSONFile("../JSON/privateRepoProjects.json");
-console.log(privateRepos);
+try {
+  let privateRepos = await readJSONFile("../JSON/privateRepoProjects.json");
+  console.log(privateRepos);
 
-for (let repo in privateRepos) {
-  $("#repo-details tbody").append(`
-      <tr>
-        <td>${repo}*</td>
-        <td>${privateRepos[repo].languages.join(", ")}</td>
-        <td>Private</td>
-      </tr>
-    `);
+  for (let repo in privateRepos) {
+    console.log(repo.description);
+    console.log(repo.languages);
+    const card = $("<div>").addClass("card");
+    const cardHeading = $("<h2>").addClass("card-heading");
+    const cardDescription = $("<p>").addClass("card-description");
+    const cardImages = $("<div>").addClass("card-images");
+
+    cardHeading.text(`${repo}*`);
+    cardDescription.text(privateRepos[repo].description);
+
+    for (let j = 0; j<privateRepos[repo].languages.length; j++) {
+      const languageImage = $("<img>").attr({
+        src: `./Images/Skills-Tools-Images/${privateRepos[repo].languages[j]}.svg`,
+      });
+      cardImages.append(languageImage);
+    }
+
+    card.append(cardHeading, cardDescription, cardImages);
+    $(".card-container").append(card);
+  }
+} catch (error) {
+  console.error("An error occurred:", error);
 }
