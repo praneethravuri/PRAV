@@ -42,4 +42,25 @@ header {
 .menu-items a:hover {
   color: #ffbd39;
   border-bottom: 0.3rem solid #ffbd39;
+}
+
+#resume-btn {
+  padding: 3px 10px;
+  background-color: #ffbd39;
+  border: 2px solid #ffbd39;
+  border-radius: 5px;
+}
+#resume-btn a {
+  color: black;
+  font-weight: 600;
+}
+#resume-btn a:hover {
+  color: white;
+  border: none;
+}
+#resume-btn:hover {
+  background-color: black;
+}
+#resume-btn:hover a {
+  color: white;
 }/*# sourceMappingURL=navbar.css.map */

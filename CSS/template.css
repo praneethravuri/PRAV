@@ -24,7 +24,7 @@ body {
 }
 
 #introduction {
-  margin-top: 60px;
+  margin-top: 125px;
   height: 70vh;
   display: flex;
   text-align: left;
@@ -51,31 +51,6 @@ body {
 
 .small-about-me {
   width: 75%;
-}
-
-.link-btns {
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
-.link-btns a {
-  padding: 10px 30px;
-  margin: 10px;
-  border: 1px solid #ffbd39;
-  border-radius: 5px;
-  background-color: black;
-  box-sizing: border-box;
-  font-weight: 500;
-  color: white;
-  transition: all 0.3s ease 0s;
-}
-
-.link-btns a:hover {
-  background-color: black;
-  color: #ffbd39;
-  border: 1px solid white;
-  box-shadow: 5px 8px #ffbd39;
 }
 
 .section-separator,
@@ -108,4 +83,9 @@ body {
 
 .get-in-touch {
   margin-top: 75px;
+  font-weight: 800;
+}
+.get-in-touch span a {
+  color: #ffbd39;
+  font-weight: 600;
 }/*# sourceMappingURL=template.css.map */

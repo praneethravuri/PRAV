@@ -1,4 +1,4 @@
-let skillsToolsList = [
+const skillsToolsList = [
   "Python",
   "C",
   "C++",
@@ -21,9 +21,9 @@ let skillsToolsList = [
   "Zorba"
 ];
 
-let skillsDiv = document.getElementById("skills-div");
+const skillsDiv = document.getElementById("skills-div");
 
-let ulCount = Math.ceil(skillsToolsList.length / 4); // Calculate the number of <ul> tags needed
+const ulCount = Math.ceil(skillsToolsList.length / 4); // Calculate the number of <ul> tags needed
 
 for (let i = 0; i < skillsToolsList.length; i += 1) {
   let skillsList = document.createElement("ul");
