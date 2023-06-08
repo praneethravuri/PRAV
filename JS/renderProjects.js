@@ -1,16 +1,7 @@
-export async function githubRepos(username) {
-  const apiURL = `https://api.github.com/users/${username}/repos`;
-  try {
-    const response = await fetch(apiURL);
-
-    if (!response.ok) throw new Error("Failed to fetch the repositories");
-
-    const repos = await response.json();
-    return repos;
-  } catch (error) {
-    console.log(error);
-    return [];
-  }
+async function readJSONFile(url) {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
 }
 
 export async function getLanguages(repoName) {
@@ -27,81 +18,94 @@ export async function getLanguages(repoName) {
   }
 }
 
-const username = "praneethravuri";
+export async function getRepoDetails(username) {
+  const apiURL = `https://api.github.com/users/${username}/repos`;
+  const details = {};
 
-githubRepos(username)
-  .then(async (repos) => {
+  try {
+    const response = await fetch(apiURL);
+
+    if (!response.ok) throw new Error("Failed to fetch the repositories");
+
+    const repos = await response.json();
+
     for (let i = 0; i < repos.length; i++) {
       const repo = repos[i];
-      if (repo.name != "praneethravuri") {
+      if (repo.name !== username) {
         const languages = await getLanguages(repo.name);
-
         const currRepoName = repo.name.replace(/-/g, " ");
         const createdAt = repo.created_at.substring(0, 4);
 
-        const card = $("<div>").addClass("card");
-        const headingContainer = $("<div>").addClass("heading-container");
-        const cardHeading = $("<h2>").addClass("card-heading");
-        const year = $("<h2>").addClass("year");
-        const cardDescription = $("<p>").addClass("card-description");
-        const cardImages = $("<div>").addClass("card-images");
-
-        cardHeading.html(`<a href="${repo.html_url}">${currRepoName}</a>`);
-        cardDescription.text(repo.description);
-        year.text(createdAt);
-
-        for (let j = 0; j < languages.length; j++) {
-          let languageImage = $("<img>").attr({
-            src: `./Images/Skills-Tools-Images/${languages[j]}.svg`,
-            alt: languages[j],
-          });
-          let imageLogo = languageImage.addClass("image-logo");
-          cardImages.append(languageImage);
-        }
-
-        headingContainer.append(cardHeading, year); // Add card-heading and year to the heading-container
-        card.append(headingContainer, cardDescription, cardImages);
-        $(".card-container").append(card);
+        details[currRepoName] = {
+          html_url: repo.html_url,
+          description: repo.description,
+          year: createdAt,
+          languages: languages,
+        };
       }
     }
-  })
-  .catch((error) => {
-    console.error("An error occurred:", error);
-  });
-  async function readJSONFile(url) {
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
+  } catch (error) {
+    console.log(error);
   }
-  
+
   try {
-    let privateRepos = await readJSONFile("../JSON/privateRepoProjects.json");
-  
+    const privateRepos = await readJSONFile("../JSON/privateRepoProjects.json");
+
     for (let repo in privateRepos) {
+      const currRepoName = `${repo}*`;
+      const year = privateRepos[repo].year;
+      const description = privateRepos[repo].description;
+      const languages = privateRepos[repo].languages;
+
+      details[currRepoName] = {
+        year: year,
+        description: description,
+        languages: languages,
+      };
+    }
+  } catch (error) {
+    console.error("An error occurred:", error);
+  }
+
+  return details;
+}
+
+const username = "praneethravuri";
+
+getRepoDetails(username)
+  .then((repoDetails) => {
+    for (let repo in repoDetails) {
+      const details = repoDetails[repo];
+
       const card = $("<div>").addClass("card");
       const headingContainer = $("<div>").addClass("heading-container");
       const cardHeading = $("<h2>").addClass("card-heading");
       const year = $("<h2>").addClass("year");
       const cardDescription = $("<p>").addClass("card-description");
       const cardImages = $("<div>").addClass("card-images");
-  
-      cardHeading.html(`<h2 class="class-heading">${repo}<span style="color: #ffbd39">*</span></h2>`);
-      year.text(privateRepos[repo].year);
-      cardDescription.text(privateRepos[repo].description);
-  
+
+      if (details.html_url) {
+        cardHeading.html(`<a href="${details.html_url}">${repo}</a>`);
+      } else {
+        cardHeading.html(`<h2 class="class-heading">${repo}</h2>`);
+      }
+
+      year.text(details.year);
+      cardDescription.text(details.description);
+
       headingContainer.append(cardHeading, year); // Add card-heading and year to the heading-container
       card.append(headingContainer, cardDescription, cardImages);
-  
-      for (let j = 0; j < privateRepos[repo].languages.length; j++) {
+
+      for (let j = 0; j < details.languages.length; j++) {
         const languageImage = $("<img>").attr({
-          src: `./Images/Skills-Tools-Images/${privateRepos[repo].languages[j]}.svg`,
+          src: `./Images/Skills-Tools-Images/${details.languages[j]}.svg`,
         });
         cardImages.append(languageImage);
       }
-  
+
       $(".card-container").append(card);
     }
-  } catch (error) {
+  })
+  .catch((error) => {
     console.error("An error occurred:", error);
-  }
-  
+  });
