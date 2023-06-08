@@ -71,6 +71,7 @@
 
 .card-heading a {
   transition: all 0.3s ease 0s;
+  font-weight: bold;
 }
 .card-heading a:hover {
   color: #ffbd39;
