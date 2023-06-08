@@ -1,24 +1,22 @@
 .footer {
-  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 100px;
+  border-top: 2px solid #ffbd39;
 }
 
-.location {
-  color: white;
+.location,
+.quick-links,
+.social-media {
+  color: #fff;
   margin-bottom: 10px;
 }
 
 a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-}
-.quick-links {
-  color: white;
-  margin-bottom: 10px;
 }
 
 ul {
@@ -29,23 +27,11 @@ ul li {
   margin-bottom: 5px;
 }
 ul a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
-.social-media {
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-ul li {
+.social-media li {
   display: inline-block;
   margin-right: 10px;
-}
-ul a {
-  color: white;
-  text-decoration: none;
 }/*# sourceMappingURL=footer.css.map */

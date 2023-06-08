@@ -1,31 +1,27 @@
-$primary-color: white
+$primary-color: #fff
 $secondary-color: #666
-$footer-bg-color: black
+$footer-bg-color: #000
 $footer-padding: 20px
 $orange: #ffbd39
-$light-gray: rgba(255, 255, 255, 0.1)
+$light-gray: rgba(#fff, 0.1)
 
 .footer
-    background-color: $light-gray
     padding: $footer-padding
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     margin-top: 100px
-    
+    border-top: 2px solid $orange
 
-.location
+.location,
+.quick-links,
+.social-media
     color: $primary-color
     margin-bottom: 10px
 
 a
     color: $primary-color
     text-decoration: none
-    &:hover
-
-.quick-links
-    color: $primary-color
-    margin-bottom: 10px
 
 ul
     list-style-type: none
@@ -33,22 +29,11 @@ ul
 
     li
         margin-bottom: 5px
-    a
-        color: $primary-color
-        text-decoration: none
-
-.social-media
-    color: $primary-color
-
-ul
-    list-style-type: none
-    padding: 0
-
-    li
-        display: inline-block
-        margin-right: 10px
 
     a
         color: $primary-color
         text-decoration: none
-        &:hover
+
+.social-media li
+    display: inline-block
+    margin-right: 10px
