@@ -85,7 +85,7 @@ githubRepos(username)
       const cardDescription = $("<p>").addClass("card-description");
       const cardImages = $("<div>").addClass("card-images");
   
-      cardHeading.text(repo);
+      cardHeading.html(`<h2 class="class-heading">${repo}<span style="color: #ffbd39">*</span></h2>`);
       year.text(privateRepos[repo].year);
       cardDescription.text(privateRepos[repo].description);
   
