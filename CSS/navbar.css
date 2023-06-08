@@ -2,7 +2,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
   width: 80%;
   margin: auto;
   padding: 2.5rem 1rem;
@@ -13,13 +12,13 @@ header {
   top: 0;
 }
 
-li {
+.nav-links li {
   display: inline-block;
   color: whitesmoke;
-  padding: 0px 10px 0px 10px;
+  padding: 0 10px;
 }
 
-li a {
+.nav-links li a {
   transition: all 0.3s ease 0s;
 }
 
@@ -28,7 +27,7 @@ li a {
   font-weight: bold;
   font-size: 1.5rem;
   font-style: italic;
-  transition: all 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 #main-title:hover {
@@ -36,10 +35,11 @@ li a {
   border-bottom: none;
 }
 
-a {
-  transition: all 0.3s ease 0s;
+.menu-items a {
+  transition: color 0.3s ease 0s, border-bottom 0.3s ease 0s;
 }
-a:hover {
+
+.menu-items a:hover {
   color: #ffbd39;
   border-bottom: 0.3rem solid #ffbd39;
 }/*# sourceMappingURL=navbar.css.map */

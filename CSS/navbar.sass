@@ -1,9 +1,9 @@
 $orange: #ffbd39
+
 header
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 10px 0px
     width: 80%
     margin: auto
     padding: 2.5rem 1rem
@@ -13,32 +13,28 @@ header
     position: fixed
     top: 0
 
-.nav-links
-li
+.nav-links li
     display: inline-block
     color: whitesmoke
-    padding: 0px 10px 0px 10px
+    padding: 0 10px
 
-.nav-links
-li
-    a
-        transition: all 0.3s ease 0s
+.nav-links li a
+    transition: all 0.3s ease 0s
 
 #main-title
     color: $orange
     font-weight: bold
     font-size: 1.5rem
     font-style: italic
-    transition: all 0.3s ease 0s
+    transition: color 0.3s ease 0s
 
 #main-title:hover
     color: white
     border-bottom: none
 
-.menu-items
-a
-    transition: all 0.3s ease 0s
+.menu-items a
+    transition: color 0.3s ease 0s, border-bottom 0.3s ease 0s
 
-    &:hover
-        color: $orange
-        border-bottom: 0.3rem solid $orange
+.menu-items a:hover
+    color: $orange
+    border-bottom: 0.3rem solid $orange
