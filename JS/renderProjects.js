@@ -18,7 +18,7 @@ export async function getLanguages(repoName) {
   }
 }
 
-export async function getRepoDetails(username) {
+export async function renderRepoDetails(username) {
   const apiURL = `https://api.github.com/users/${username}/repos`;
   const details = {};
 
@@ -31,7 +31,10 @@ export async function getRepoDetails(username) {
 
     for (let i = 0; i < repos.length; i++) {
       const repo = repos[i];
-      if (repo.name !== username) {
+
+      let exceptionRepos = ["praneethravuri"];
+
+      if (!exceptionRepos.includes(repo.name)) {
         const languages = await getLanguages(repo.name);
         const currRepoName = repo.name.replace(/-/g, " ");
         const createdAt = repo.created_at.substring(0, 4);
@@ -72,7 +75,7 @@ export async function getRepoDetails(username) {
 
 const username = "praneethravuri";
 
-getRepoDetails(username)
+renderRepoDetails(username)
   .then((repoDetails) => {
     for (let repo in repoDetails) {
       const details = repoDetails[repo];
