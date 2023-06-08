@@ -10,12 +10,12 @@ let skillsToolsList = [
   "Java",
   "JQuery",
   "Sass",
+  "MongoDB",
   "Adobe Premiere Pro",
   "Gimp",
   "Git",
   "GitHub",
   "VS Code",
-  "SQL",
   "PyCharm",
   "JSONiq",
   "Zorba"
