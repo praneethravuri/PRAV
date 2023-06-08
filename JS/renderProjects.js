@@ -85,7 +85,7 @@ getRepoDetails(username)
       const cardImages = $("<div>").addClass("card-images");
 
       if (details.html_url) {
-        cardHeading.html(`<a href="${details.html_url}">${repo}</a>`);
+        cardHeading.html(`<a href="${details.html_url}" target="_blank">${repo}&nbsp;&nbsp;<span ><img src="./Images/external-link.svg" class="external-link"></span></a>`);
       } else {
         cardHeading.html(`<h2 class="class-heading">${repo}</h2>`);
       }

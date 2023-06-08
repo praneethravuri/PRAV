@@ -7,6 +7,21 @@
     "Patriot Board" : {
         "year" : 2023,
         "languages" : ["HTML", "CSS", "Javascript", "Jquery", "Java"],
-        "description" : "sdfsfsafsaf"
+        "description" : "Final project for SWE 632 course at George Mason University: This project aims to improve the design process of user interfaces."
+    },
+    "K-Means Algorithm on Iris Dataset":{
+        "year" : 2022,
+        "languages" : ["Python"],
+        "description" : "Implementation of the K-Means algorithm and it's application Iris dataset. The task is to assign each instance to one of three cluster IDs, namely 1, 2, or 3."
+    },
+    "Drug Activity Prediction" : {
+        "year" : 2022,
+        "languages" : ["Python"],
+        "description" : "Predict whether a drug compound is active or not using binary classification models like Naive Bayes and Decision Tree Classifier"
+    },
+    "Drug Activity Prediction with Adaboost" : {
+        "year" : 2022,
+        "languages" : ["Python"],
+        "description" : "Predict whether a drug compound is active or not using  Naive Bayes and Adaboost boosting technique"
     }
 }

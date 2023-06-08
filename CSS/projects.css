@@ -66,4 +66,16 @@
 .year {
   margin-right: 10px;
   color: #ffbd39;
+}
+
+.card-heading a {
+  transition: all 0.3s ease 0s;
+}
+.card-heading a:hover {
+  color: #ffbd39;
+  border-bottom: 0.3rem solid #ffbd39;
+}
+
+.external-link {
+  width: 4.5%;
 }/*# sourceMappingURL=projects.css.map */

@@ -10,13 +10,15 @@
 .location,
 .quick-links,
 .social-media {
-  color: #fff;
   margin-bottom: 10px;
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+a:hover {
+  color: #ffbd39;
+  border-bottom: 0.3rem solid #ffbd39;
 }
 
 ul {
@@ -27,11 +29,21 @@ ul li {
   margin-bottom: 5px;
 }
 ul a {
-  color: #fff;
   text-decoration: none;
 }
 
 .social-media li {
   display: inline-block;
   margin-right: 10px;
+}
+
+.footer-note {
+  text-align: center;
+}
+.footer-note p {
+  font-size: 0.75rem;
+  padding: 10px;
+}
+.footer-note span {
+  font-size: 0.75rem;
 }/*# sourceMappingURL=footer.css.map */
