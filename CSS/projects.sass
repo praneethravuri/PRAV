@@ -27,9 +27,10 @@ $light-gray: rgba(255, 255, 255, 0.1)
     margin-bottom: 10px
     padding: 10px
     background-color: $light-gray
-    position: relative /* Enable positioning */
+    position: relative
 
-    &-heading
+    &-heading,
+    &-description
         font-size: 24px
         margin-bottom: 10px
 
@@ -38,9 +39,9 @@ $light-gray: rgba(255, 255, 255, 0.1)
         margin-bottom: 20px
 
     &-images
-        position: absolute /* Position the images absolutely within the card */
-        bottom: 10px /* Adjust the distance from the bottom as needed */
-        left: 10px /* Adjust the distance from the left as needed */
+        position: absolute
+        bottom: 10px
+        left: 10px
         display: flex
         align-items: center
         margin-right: 10px
@@ -49,7 +50,7 @@ $light-gray: rgba(255, 255, 255, 0.1)
         width: 40px
         height: 40px
         margin-right: 5px
-        object-fit: cover /* Maintain aspect ratio while filling the container */
+        object-fit: cover
 
 .heading-container
     display: flex
