@@ -2,6 +2,8 @@
 
 [Website Link](https://snazzy-cocada-b041d4.netlify.app/)
 
+Viewed best in Firefox
+
 ## Skills & Tools
 
 The skills and tools cards are also dynamically generated with the help of an array in `skillsTools.js` file
