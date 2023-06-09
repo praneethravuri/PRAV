@@ -71,14 +71,14 @@
 
 .card-heading a {
   transition: all 0.3s ease 0s;
-  font-weight: bold;
+  font-weight: 600;
 }
 .card-heading a:hover {
   color: #ffbd39;
   border-bottom: 0.3rem solid #ffbd39;
 }
 .card-heading h2 {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .external-link {
