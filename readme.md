@@ -2,23 +2,12 @@
 
 [Website Link](https://snazzy-cocada-b041d4.netlify.app/)
 
-Viewed best in Firefox
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 
-## Skills & Tools
+Icons - [Icons8](https://icons8.com/)
 
-The skills and tools cards are also dynamically generated with the help of an array in `skillsTools.js` file
-
-## Projects
-
-The Github Public API is used to fetch all the public repositories of my account. The API is modified to fetch all the languages used in a particular repository. Some repositories are excluded from displaying. 
-
-Private repositories' names and their details are stored in a json file, `privateRepoProjects.json`. These private repositories are displayed on the website but do not have any links. This is to ensure that [GMU Honor Code](https://oai.gmu.edu/full-honor-code-document/) is not violated.
-
-The details of the public and private repositories are stored in an object and rendered out in HTML.
-
-## Tech Stack
-1. HTML
-2. CSS
-3. Javascript
-4. JQuery
-5. SASS
+Animation - [Animate.css](https://animate.style/)
