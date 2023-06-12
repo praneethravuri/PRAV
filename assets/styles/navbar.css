@@ -7,6 +7,7 @@
   font-weight: bold;
   font-style: italic;
   transition: all 0.3s ease 0s;
+  font-size: 2rem;
 }
 .navbar-brand:hover {
   color: white;
@@ -29,8 +30,8 @@
   transition: all 0.3s ease 0s;
 }
 .resume-btn:hover {
-  border: 1px solid white;
-  color: #00f5d0;
+  box-shadow: 5px 5px #00f5d0;
+  border: 1px solid #00f5d0;
 }
 
 .navbar-nav a {
