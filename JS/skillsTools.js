@@ -7,7 +7,7 @@ const skillsToolsList = [
   "Javascript",
   "Bootstrap",
   "Node JS",
-  "Java",
+  "Flask",
   "JQuery",
   "Sass",
   "MongoDB",
