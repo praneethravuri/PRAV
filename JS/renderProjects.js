@@ -8,8 +8,7 @@ async function renderProjectDetails() {
   try {
     const projects = await readJSONFile("../data/projects.json");
 
-    let row = document.createElement("div");
-    row.classList.add("row", "card-container", "req-animate");
+    const cardContainer = document.querySelector(".card-container");
 
     for (let project in projects) {
       const projectName = project;
@@ -18,7 +17,7 @@ async function renderProjectDetails() {
       const languages = projects[project].languages;
 
       const col = document.createElement("div");
-      col.classList.add("col-md-6", "mb-4", "req-animate");
+      col.classList.add("col-md-6", "mb-4");
 
       const card = document.createElement("div");
       card.classList.add("card");
@@ -76,21 +75,7 @@ async function renderProjectDetails() {
       }
 
       col.appendChild(card);
-      row.appendChild(col);
-
-      if (row.children.length === 2) {
-        document.querySelector(".card-container").appendChild(row);
-        row = document.createElement("div");
-        row.classList.add("row", "card-container", "req-animate", "individual-row");
-      }
-    }
-
-    // Check if there is an unfinished row with a single card
-    if (row.children.length === 1) {
-      const col = document.createElement("div");
-      col.classList.add("col-md-6", "mb-4");
-      row.appendChild(col);
-      document.querySelector(".card-container").appendChild(row);
+      cardContainer.appendChild(col);
     }
   } catch (error) {
     console.error(error);
