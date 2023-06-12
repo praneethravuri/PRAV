@@ -37,7 +37,7 @@
   "Patriot Board*": {
     "year": 2023,
     "description": "Final project for SWE 632 course at George Mason University: This project aims to improve the design process of user interfaces.",
-    "languages": ["HTML", "CSS", "Javascript", "Jquery", "Java"]
+    "languages": ["HTML", "CSS", "Javascript", "Jquery", "Java", "Bootstrap"]
   },
   "K-Means Algorithm on Iris Dataset*": {
     "year": 2022,

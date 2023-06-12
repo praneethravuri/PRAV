@@ -9,7 +9,7 @@ async function renderProjectDetails() {
     const projects = await readJSONFile("../data/projects.json");
 
     let row = document.createElement("div");
-    row.classList.add("row", "card-container");
+    row.classList.add("row", "card-container", "req-animate");
 
     for (let project in projects) {
       const projectName = project;
@@ -18,7 +18,7 @@ async function renderProjectDetails() {
       const languages = projects[project].languages;
 
       const col = document.createElement("div");
-      col.classList.add("col-md-6", "mb-4");
+      col.classList.add("col-md-6", "mb-4", "req-animate");
 
       const card = document.createElement("div");
       card.classList.add("card");
@@ -81,7 +81,7 @@ async function renderProjectDetails() {
       if (row.children.length === 2) {
         document.querySelector(".card-container").appendChild(row);
         row = document.createElement("div");
-        row.classList.add("row", "card-container");
+        row.classList.add("row", "card-container", "req-animate", "individual-row");
       }
     }
 
