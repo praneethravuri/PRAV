@@ -12,7 +12,7 @@
 }
 
 .card-title, .year {
-  color: #ffbd39;
+  color: #00f5d0;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -25,11 +25,11 @@
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  color: #ffbd39;
+  color: #00f5d0;
 }
 
 #hc-link a {
-  color: #ffbd39;
+  color: #00f5d0;
   font-weight: bold;
   text-decoration: none;
 }

@@ -3,7 +3,7 @@
 }
 
 .navbar-brand {
-  color: #ffbd39;
+  color: #00f5d0;
   font-weight: bold;
   font-style: italic;
   transition: all 0.3s ease 0s;
@@ -18,19 +18,19 @@
   transition: all 0.3s ease 0s;
 }
 .nav-link:hover {
-  color: #ffbd39;
+  color: #00f5d0;
   border: none;
 }
 
 .resume-btn {
   color: black;
-  background-color: #ffbd39;
+  background-color: #00f5d0;
   font-weight: bold;
   transition: all 0.3s ease 0s;
 }
 .resume-btn:hover {
   border: 1px solid white;
-  color: #ffbd39;
+  color: #00f5d0;
 }
 
 .navbar-nav a {

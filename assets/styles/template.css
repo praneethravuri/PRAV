@@ -30,7 +30,7 @@ body {
 
 .section-separator,
 .title-separator {
-  color: #ffbd39;
+  color: #00f5d0;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -61,7 +61,7 @@ body {
   font-weight: 800;
 }
 .get-in-touch span a {
-  color: #ffbd39;
+  color: #00f5d0;
   font-weight: 600;
 }
 

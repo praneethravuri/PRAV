@@ -18,7 +18,7 @@
   border-radius: 5px;
 }
 .skill:hover span {
-  color: #ffbd39;
+  color: #00f5d0;
 }
 .skill img {
   width: 20%;
@@ -29,5 +29,5 @@
   transition: all 0.3s ease 0s;
 }
 .skill span:hover {
-  color: #ffbd39;
+  color: #00f5d0;
 }/*# sourceMappingURL=skillsTools.css.map */

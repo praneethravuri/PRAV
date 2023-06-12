@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 100px;
-  border-top: 2px solid #ffbd39;
+  border-top: 2px solid #00f5d0;
 }
 
 .location,
@@ -18,8 +18,8 @@ a {
   font-size: 1rem;
 }
 a:hover {
-  color: #ffbd39;
-  border-bottom: 0.3rem solid #ffbd39;
+  color: #00f5d0;
+  border-bottom: 0.3rem solid #00f5d0;
 }
 
 ul {
@@ -51,6 +51,6 @@ ul a {
 }
 .footer-note a {
   font-size: 0.75rem;
-  color: #ffbd39;
+  color: #00f5d0;
   border: none;
 }/*# sourceMappingURL=footer.css.map */
