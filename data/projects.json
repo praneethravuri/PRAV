@@ -1,0 +1,57 @@
+{
+  "PRAV": {
+    "year": 2023,
+    "description": "First iteration of my personal website made using Sass and Vanilla Javascript. Contains dynamically generated content and clear user interface",
+    "languages": ["Javascript", "Sass", "CSS", "HTML", "Jquery"],
+    "projectLink": "https://github.com/praneethravuri/PRAV"
+  },
+  "Invespo": {
+    "year": 2023,
+    "description": "Invespo: A stock trading front-end for SWE 632 course @ George Mason Univ. Built with HTML, CSS, JS, jQuery. Explores interface design principles in user-centric design. ",
+    "languages": ["Javascript", "CSS", "HTML", "Jquery"],
+    "projectLink": "https://github.com/praneethravuri/Invespo"
+  },
+  "Amazon Product Information Scraper": {
+    "year": 2021,
+    "description": "This Python web-scraping project retrieves product names, prices, review stars, and review counts for a specific product category.",
+    "languages": ["Python"],
+    "projectLink": "https://github.com/praneethravuri/Amazon-Product-Information-Scraper"
+  },
+  "Youtube Playlist Video Downloader": {
+    "year": 2022,
+    "description": "Continuously downloads the latest videos added to the specified playlist. Made with Python and PyTube library ",
+    "languages": ["Python"],
+    "projectLink": "https://github.com/praneethravuri/YouTube-Playlist-Video-Downloader"
+  },
+  "Newton Classroom Automation": {
+    "year": 2021,
+    "description": "A bot that utilizes webscraping techniques to navigate through the Google Meet interface, enter specified classes at the designated times, and exit the classes once the sessions are complete.",
+    "languages": ["Python"],
+    "projectLink": "https://github.com/praneethravuri/Newton-Classroom-Automation"
+  },
+  "Horizon Airlines Bookings*": {
+    "year": 2023,
+    "description": "Horizon Airlines Bookings is a Flask and MongoDB web app that streamlines flight bookings and management. This project is for the INFS 740 course at George Mason University, Spring 2023. ",
+    "languages": ["Python", "HTML", "CSS", "Javascript", "Jquery", "MongoDB"]
+  },
+  "Patriot Board*": {
+    "year": 2023,
+    "description": "Final project for SWE 632 course at George Mason University: This project aims to improve the design process of user interfaces.",
+    "languages": ["HTML", "CSS", "Javascript", "Jquery", "Java"]
+  },
+  "K-Means Algorithm on Iris Dataset*": {
+    "year": 2022,
+    "description": "Implementation of the K-Means algorithm and it's application Iris dataset. The task is to assign each instance to one of three cluster IDs, namely 1, 2, or 3.",
+    "languages": ["Python"]
+  },
+  "Drug Activity Prediction*": {
+    "year": 2022,
+    "description": "Predict whether a drug compound is active or not using binary classification models like Naive Bayes and Decision Tree Classifier",
+    "languages": ["Python"]
+  },
+  "Drug Activity Prediction with Adaboost*": {
+    "year": 2022,
+    "description": "Predict whether a drug compound is active or not using  Naive Bayes and Adaboost boosting technique",
+    "languages": ["Python"]
+  }
+}

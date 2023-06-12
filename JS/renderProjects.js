@@ -4,111 +4,50 @@ async function readJSONFile(url) {
   return data;
 }
 
-export async function getLanguages(repoName) {
-  let languageURL = `https://api.github.com/repos/praneethravuri/${repoName}/languages`;
+async function renderProjectDetails() {
   try {
-    const response = await fetch(languageURL);
+    const projects = await readJSONFile("../data/projects.json");
+    console.log(projects);
 
-    if (!response.ok) throw new Error("Failed to fetch the repository details");
-
-    const languages = await response.json();
-    return Object.keys(languages);
-  } catch (error) {
-    return [];
-  }
-}
-
-export async function renderRepoDetails(username) {
-  const apiURL = `https://api.github.com/users/${username}/repos`;
-  const details = {};
-
-  try {
-    const response = await fetch(apiURL);
-
-    if (!response.ok) throw new Error("Failed to fetch the repositories");
-
-    const repos = await response.json();
-
-    for (let i = 0; i < repos.length; i++) {
-      const repo = repos[i];
-
-      let exceptionRepos = ["praneethravuri"];
-
-      if (!exceptionRepos.includes(repo.name)) {
-        const languages = await getLanguages(repo.name);
-        const currRepoName = repo.name.replace(/-/g, " ");
-        const createdAt = repo.created_at.substring(0, 4);
-
-        details[currRepoName] = {
-          html_url: repo.html_url,
-          description: repo.description,
-          year: createdAt,
-          languages: languages,
-        };
-      }
-    }
-  } catch (error) {
-    console.log(error);
-  }
-
-  try {
-    const privateRepos = await readJSONFile("../data/privateRepoProjects.json");
-
-    for (let repo in privateRepos) {
-      const currRepoName = `${repo}*`;
-      const year = privateRepos[repo].year;
-      const description = privateRepos[repo].description;
-      const languages = privateRepos[repo].languages;
-
-      details[currRepoName] = {
-        year: year,
-        description: description,
-        languages: languages,
-      };
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-  }
-
-  return details;
-}
-
-const username = "praneethravuri";
-
-renderRepoDetails(username)
-  .then((repoDetails) => {
-    for (let repo in repoDetails) {
-      const details = repoDetails[repo];
+    for (let project in projects) {
+      const projectName = project;
+      const year = projects[project].year;
+      const description = projects[project].description;
+      const languages = projects[project].languages;
 
       const card = $("<div>").addClass("card");
       const headingContainer = $("<div>").addClass("heading-container");
       const cardHeading = $("<h2>").addClass("card-heading");
-      const year = $("<h2>").addClass("year");
+      const yearTag = $("<h2>").addClass("year");
       const cardDescription = $("<p>").addClass("card-description");
       const cardImages = $("<div>").addClass("card-images");
 
-      if (details.html_url) {
-        cardHeading.html(`<a href="${details.html_url}" target="_blank">${repo}&nbsp;&nbsp;<span ><img src="../public/images/external-link.svg" class="external-link"></span></a>`);
+      if (projects[project].projectLink) {
+        cardHeading.html(
+          `<a href="${projects[project].projectLink}" target="_blank">${project}&nbsp;&nbsp;<span ><img src="../public/images/external-link.svg" class="external-link"></span></a>`
+        );
       } else {
-        cardHeading.html(`<h2 class="class-heading">${repo}</h2>`);
+        cardHeading.html(`<h2 class="class-heading">${project}</h2>`);
       }
 
-      year.text(details.year);
-      cardDescription.text(details.description);
+      yearTag.text(year);
+      cardDescription.text(description);
 
-      headingContainer.append(cardHeading, year); // Add card-heading and year to the heading-container
+      headingContainer.append(cardHeading, yearTag);
       card.append(headingContainer, cardDescription, cardImages);
 
-      for (let j = 0; j < details.languages.length; j++) {
+      for (let j = 0; j < languages.length; j++) {
         const languageImage = $("<img>").attr({
-          src: `../assets/icons/${details.languages[j]}.svg`,
+          src: `../assets/icons/${languages[j]}.svg`,
         });
         cardImages.append(languageImage);
       }
 
       $(".card-container").append(card);
     }
-  })
-  .catch((error) => {
-    console.error("An error occurred:", error);
-  });
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+renderProjectDetails();

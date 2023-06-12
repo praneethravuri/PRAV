@@ -28,12 +28,12 @@
   background-color: rgba(255, 255, 255, 0.1);
   position: relative;
 }
-.card-heading, .card-description {
-  font-size: 24px;
-  margin-bottom: 10px;
+.card-heading a, .card-heading h2 {
+  font-size: 1.25rem;
+  color: #ffbd39;
 }
 .card-description {
-  font-size: 16px;
+  font-size: 0.85rem;
   margin-bottom: 20px;
 }
 .card-images {
@@ -62,13 +62,6 @@
   flex-grow: 1;
   margin-right: 10px;
 }
-
-.year {
-  margin-right: 10px;
-  color: #ffbd39;
-  font-weight: 700;
-}
-
 .card-heading a {
   transition: all 0.3s ease 0s;
   font-weight: 600;
@@ -79,6 +72,12 @@
 }
 .card-heading h2 {
   font-weight: 600;
+}
+
+.year {
+  margin-right: 10px;
+  color: #ffbd39;
+  font-weight: 700;
 }
 
 .external-link {

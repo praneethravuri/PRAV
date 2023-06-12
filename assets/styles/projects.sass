@@ -29,13 +29,13 @@ $light-gray: rgba(255, 255, 255, 0.1)
     background-color: $light-gray
     position: relative
 
-    &-heading,
-    &-description
-        font-size: 24px
-        margin-bottom: 10px
+    &-heading
+        a, h2
+            font-size: 1.25rem
+            color: $orange
 
     &-description
-        font-size: 16px
+        font-size: 0.85rem
         margin-bottom: 20px
 
     &-images
@@ -61,13 +61,6 @@ $light-gray: rgba(255, 255, 255, 0.1)
     flex-grow: 1
     margin-right: 10px
 
-.year
-    margin-right: 10px
-    color: $orange
-    font-weight: 700
-
-
-.card-heading
     a
         transition: all 0.3s ease 0s
         font-weight: 600
@@ -75,8 +68,14 @@ $light-gray: rgba(255, 255, 255, 0.1)
         &:hover
             color: $orange
             border-bottom: 0.3rem solid $orange
+
     h2
         font-weight: 600
+
+.year
+    margin-right: 10px
+    color: $orange
+    font-weight: 700
 
 .external-link
     width: 4.5%
