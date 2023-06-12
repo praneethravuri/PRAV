@@ -1,0 +1,20 @@
+{
+    "Cognizant" : {
+        "position" : "Software Development Intern",
+        "dateRange" : "Jan 2022 - Jun 2022",
+        "content" : "Implemented Waterfall, Agile, and Rapid Application Development methodologies to complete projects in 90% of sprints. Developed and maintained enterprise web applications, utilizing Restful APIs and CDNs to achieve a 30% overall system performance boost.",
+        "location" : "Hyderabad, Telangana, India"
+    },
+    "Stige" : {
+        "position" : "Front-end Intern",
+        "dateRange" : "Aug 2021 - Oct 2021",
+        "content" : "Delivered 3 optimized website builds based on client wireframes, resulting in 95% client satisfaction. Collaborated with UX designers to ensure compatibility between design elements and APIs, ensuring product functionality.",
+        "location" : "Hyderabad, Telangana, India"
+    },
+    "IEEE GRIET SB" : {
+        "position" : "Web Development Head",
+        "dateRange" : "May 2019 - May 2022",
+        "content" : "Headed the IEEE GRIET SB web development team. Took charge of the operations and maintenance of the website",
+        "location" : "Hyderabad, Telangana, India"
+    }
+}

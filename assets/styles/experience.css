@@ -1,0 +1,12 @@
+.card-heading {
+  font-weight: bold;
+}
+
+.location, .card-description li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #ffbd39;
+}/*# sourceMappingURL=experience.css.map */

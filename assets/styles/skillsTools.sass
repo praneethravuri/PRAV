@@ -1,0 +1,40 @@
+$light-gray: rgba(255, 255, 255, 0.1)
+$orange: #ffbd39
+
+#skills-div
+  display: flex
+  flex-wrap: wrap
+
+#skills-list
+  list-style-type: none
+  display: flex
+  justify-content: space-between
+  width: 100%
+
+.skill
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  height: 150px
+  border: 1px solid #000
+  margin: 5px
+  background-color: $light-gray
+  transition: all 0.3s ease 0s
+
+  &:hover
+    span
+      color: $orange
+
+  & img
+    width: 20%
+    margin-bottom: 10px
+
+  & span
+    font-weight: 500
+    transition: all 0.3s ease 0s
+
+    &:hover
+      color: $orange
