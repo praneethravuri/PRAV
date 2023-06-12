@@ -41,7 +41,7 @@ async function renderProjectDetails() {
 
         const externalLink = document.createElement("span");
         const externalLinkIcon = document.createElement("img");
-        externalLinkIcon.src = "../public/images/external-link.svg";
+        externalLinkIcon.src = "../public/images/external-link-2.svg";
         externalLinkIcon.classList.add("external-link");
         externalLink.appendChild(externalLinkIcon);
 
