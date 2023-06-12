@@ -8,41 +8,89 @@ async function renderProjectDetails() {
   try {
     const projects = await readJSONFile("../data/projects.json");
 
+    let row = document.createElement("div");
+    row.classList.add("row", "card-container");
+
     for (let project in projects) {
       const projectName = project;
       const year = projects[project].year;
       const description = projects[project].description;
       const languages = projects[project].languages;
 
-      const card = $("<div>").addClass("card");
-      const headingContainer = $("<div>").addClass("heading-container");
-      const cardHeading = $("<h2>").addClass("card-heading");
-      const yearTag = $("<h2>").addClass("year");
-      const cardDescription = $("<p>").addClass("card-description");
-      const cardImages = $("<div>").addClass("card-images");
+      const col = document.createElement("div");
+      col.classList.add("col-md-6", "mb-4");
+
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      const cardBody = document.createElement("div");
+      cardBody.classList.add("card-body");
+      card.appendChild(cardBody);
+
+      const headingContainer = document.createElement("div");
+      headingContainer.classList.add("d-flex", "justify-content-between", "align-items-center");
+      cardBody.appendChild(headingContainer);
+
+      const cardHeading = document.createElement("h2");
+      cardHeading.classList.add("card-title");
 
       if (projects[project].projectLink) {
-        cardHeading.html(
-          `<a href="${projects[project].projectLink}" target="_blank">${project}&nbsp;&nbsp;<span ><img src="../public/images/external-link.svg" class="external-link"></span></a>`
-        );
+        const projectLink = document.createElement("a");
+        projectLink.href = projects[project].projectLink;
+        projectLink.target = "_blank";
+        projectLink.innerText = project;
+
+        const externalLink = document.createElement("span");
+        const externalLinkIcon = document.createElement("img");
+        externalLinkIcon.src = "../public/images/external-link.svg";
+        externalLinkIcon.classList.add("external-link");
+        externalLink.appendChild(externalLinkIcon);
+
+        cardHeading.appendChild(projectLink);
+        cardHeading.appendChild(document.createTextNode("\u00A0\u00A0"));
+        cardHeading.appendChild(externalLink);
       } else {
-        cardHeading.html(`<h2 class="class-heading">${project}</h2>`);
+        cardHeading.innerText = project;
       }
 
-      yearTag.text(year);
-      cardDescription.text(description);
+      const yearTag = document.createElement("h2");
+      yearTag.classList.add("year");
+      yearTag.innerText = year;
+      headingContainer.appendChild(cardHeading);
+      headingContainer.appendChild(yearTag);
 
-      headingContainer.append(cardHeading, yearTag);
-      card.append(headingContainer, cardDescription, cardImages);
+      const cardDescription = document.createElement("p");
+      cardDescription.classList.add("card-text");
+      cardDescription.innerText = description;
+      cardBody.appendChild(cardDescription);
+
+      const cardImages = document.createElement("div");
+      cardImages.classList.add("card-footer");
+      card.appendChild(cardImages);
 
       for (let j = 0; j < languages.length; j++) {
-        const languageImage = $("<img>").attr({
-          src: `../assets/icons/${languages[j]}.svg`,
-        });
-        cardImages.append(languageImage);
+        const languageImage = document.createElement("img");
+        languageImage.src = `../assets/icons/${languages[j]}.svg`;
+        languageImage.classList.add("me-2");
+        cardImages.appendChild(languageImage);
       }
 
-      $(".card-container").append(card);
+      col.appendChild(card);
+      row.appendChild(col);
+
+      if (row.children.length === 2) {
+        document.querySelector(".card-container").appendChild(row);
+        row = document.createElement("div");
+        row.classList.add("row", "card-container");
+      }
+    }
+
+    // Check if there is an unfinished row with a single card
+    if (row.children.length === 1) {
+      const col = document.createElement("div");
+      col.classList.add("col-md-6", "mb-4");
+      row.appendChild(col);
+      document.querySelector(".card-container").appendChild(row);
     }
   } catch (error) {
     console.error(error);

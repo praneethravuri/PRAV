@@ -2,7 +2,7 @@
   "PRAV": {
     "year": 2023,
     "description": "First iteration of my personal website made using Sass and Vanilla Javascript. Contains dynamically generated content and clear user interface",
-    "languages": ["Javascript", "Sass", "CSS", "HTML", "Jquery"],
+    "languages": ["Javascript", "Sass", "CSS", "HTML", "Jquery", "Bootstrap"],
     "projectLink": "https://github.com/praneethravuri/PRAV"
   },
   "Invespo": {
