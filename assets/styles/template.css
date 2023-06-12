@@ -58,4 +58,10 @@ body {
 .get-in-touch span a {
   color: #ffbd39;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=template.css.map */
