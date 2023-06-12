@@ -23,37 +23,6 @@ body {
   background-color: black;
 }
 
-#introduction {
-  margin-top: 125px;
-  height: 70vh;
-  display: flex;
-  text-align: left;
-  align-items: center;
-}
-
-#introduction p {
-  color: whitesmoke;
-}
-
-.intro {
-  display: block;
-}
-
-.small-size {
-  font-size: 1rem;
-}
-
-.turq-blue {
-  font-size: 5rem;
-  text-shadow: 5px 5px 1px #ffbd39;
-  font-weight: 700;
-}
-
-.small-about-me {
-  width: 75%;
-  margin-bottom: 20px;
-}
-
 .section-separator,
 .title-separator {
   color: #ffbd39;

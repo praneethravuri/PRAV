@@ -1,66 +1,34 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  padding: 2.5rem 1rem;
+.navigation-bar {
   background-color: black;
-  height: 10vh;
-  z-index: 1;
-  position: fixed;
-  top: 0;
 }
 
-.nav-links li {
-  display: inline-block;
-  color: whitesmoke;
-  padding: 0 10px;
-}
-
-.nav-links li a {
-  transition: all 0.3s ease 0s;
-}
-
-#main-title {
+.navbar-brand {
   color: #ffbd39;
   font-weight: bold;
-  font-size: 1.5rem;
   font-style: italic;
-  transition: color 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
-
-#main-title:hover {
-  color: white;
-  border-bottom: none;
-}
-
-.menu-items a {
-  transition: color 0.3s ease 0s, border-bottom 0.3s ease 0s;
-}
-
-.menu-items a:hover {
-  color: #ffbd39;
-  border-bottom: 0.3rem solid #ffbd39;
-}
-
-#resume-btn {
-  padding: 3px 10px;
-  background-color: #ffbd39;
-  border: 2px solid #ffbd39;
-  border-radius: 5px;
-}
-#resume-btn a {
-  color: black;
-  font-weight: 600;
-}
-#resume-btn a:hover {
+.navbar-brand:hover {
   color: white;
   border: none;
 }
-#resume-btn:hover {
-  background-color: black;
-}
-#resume-btn:hover a {
+
+.nav-link {
   color: white;
+  transition: all 0.3s ease 0s;
+}
+.nav-link:hover {
+  color: #ffbd39;
+  border: none;
+}
+
+.resume-btn {
+  color: black;
+  background-color: #ffbd39;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+.resume-btn:hover {
+  border: 1px solid white;
+  color: #ffbd39;
 }/*# sourceMappingURL=navbar.css.map */

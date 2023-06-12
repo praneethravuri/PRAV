@@ -3,13 +3,6 @@
   flex-wrap: wrap;
 }
 
-#skills-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .skill {
   display: flex;
   flex-direction: column;

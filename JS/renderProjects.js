@@ -7,7 +7,6 @@ async function readJSONFile(url) {
 async function renderProjectDetails() {
   try {
     const projects = await readJSONFile("../data/projects.json");
-    console.log(projects);
 
     for (let project in projects) {
       const projectName = project;

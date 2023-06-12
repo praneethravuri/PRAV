@@ -1,0 +1,21 @@
+#introduction {
+  margin-top: 125px;
+}
+
+.turq-blue {
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-shadow: 5px 5px 1px #ffbd39;
+}
+
+.small-size {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .turq-blue {
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px #ffbd39;
+  }
+}/*# sourceMappingURL=introduction.css.map */

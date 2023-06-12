@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praneeth Ravuri</title>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/styles/template.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/introduction.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/skillsTools.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/projects.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/experience.css">
@@ -19,56 +22,84 @@
 
 <body>
 
-    <header id="header-space">
-        <a href="./index.html" id="main-title">PRAV</a>
-        <nav>
-            <ul class="nav-links">
-                <li class="menu-items"><a href="#header-space">Home</a></li>
-                <li class="menu-items"><a href="#skills-tools">Skills & Tools</a></li>
-                <li class="menu-items"><a href="#projects">Projects</a></li>
-                <li class="menu-items"><a href="#experience">Experience</a></li>
-            </ul>
-        </nav>
-        <button id="resume-btn"><a href="./Docs/praneeth_ravuri_resume.pdf" download="">Resume</a></button>
+    <header id="header-space" class="navigation-bar navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">PRAV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header-space">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills-tools">Skills & Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                </ul>
+                <a class="btn resume-btn" href="./Docs/praneeth_ravuri_resume.pdf" download>Resume</a>
+            </div>
+        </div>
     </header>
 
-    <section id="introduction">
+
+    <section id="introduction" class="container">
         <div class="intro">
             <p class="small-size">Hey &#128075;, I'm</p>
             <p class="turq-blue">Praneeth Ravuri</p>
-            <p class="small-size small-about-me">Master's in Computer Science Student at George Mason University.
-                Passionate about continuous learning and staying updated with the latest advancements in technology.</p>
-            <p class="small-size small-about-me">With practical experience in front-end design at Stige and software
-                development at Cognizant, I've honed my skills in creating seamless user experiences and solving complex
-                problems.During my time as a Web Developer at IEEE GRIET Student Body, I collaborated on engaging web
-                applications which shaped me into a well-rounded professional with a passion for innovative and
-                user-friendly software solutions.</p>
-            <p class="small-size small-about-me get-in-touch">
-                Get in touch &rarr;
-                <span><a href="mailto:prav2500@gmail.com" class="small-size"
-                        target="_blank">prav2500@gmail.com</a></span>
-                <span>&nbsp;/&nbsp;</span>
-                <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/" class="small-size"
-                        target="_blank">LinkedIn</a></span>
-                <span>&nbsp;/&nbsp;</span>
-                <span><a href="https://github.com/praneethravuri" class="small-size" target="_blank">Github</a></span>
-            </p>
+            <div class="row w-100">
+                <div class="col">
+                    <p class="small-size small-about-me w-100">Master's in Computer Science Student at George Mason
+                        University.
+                        Passionate about continuous learning and staying updated with the latest advancements in
+                        technology.</p>
+                    <p class="small-size small-about-me w-100">With practical experience in front-end design at Stige
+                        and
+                        software
+                        development at Cognizant, I've honed my skills in creating seamless user experiences and
+                        solving complex
+                        problems. During my time as a Web Developer at IEEE GRIET Student Body, I collaborated on
+                        engaging web
+                        applications which shaped me into a well-rounded professional with a passion for innovative
+                        and
+                        user-friendly software solutions.</p>
+                    <p class="small-size small-about-me get-in-touch">
+                        Get in touch &rarr;
+                        <span><a href="mailto:prav2500@gmail.com" class="small-size"
+                                target="_blank">prav2500@gmail.com</a></span>
+                        <span>&nbsp;/&nbsp;</span>
+                        <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/" class="small-size"
+                                target="_blank">LinkedIn</a></span>
+                        <span>&nbsp;/&nbsp;</span>
+                        <span><a href="https://github.com/praneethravuri" class="small-size"
+                                target="_blank">Github</a></span>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section id="skills-tools">
-        <div id="section-title">
-            <p class="title">Skills & Tools</p>
+    <section id="skills-tools" class="container mt-5">
+        <div id="section-title" class="text-center">
+            <p class="title">Skills &amp; Tools</p>
         </div>
 
         <hr class="title-separator">
 
-        <div id="skills-div">
+        <div id="skills-div" class="row">
+            <!-- Skills will be appended here dynamically -->
         </div>
-
-
     </section>
+
+
 
     <section id="projects">
         <div id="section-title">
@@ -109,10 +140,13 @@
     </footer>
 
     <div class="footer-note">
-        <p>Designed and Built by <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/" target="_blank">Praneeth Ravuri</a></span></p>
+        <p>Designed and Built by <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/"
+                    target="_blank">Praneeth Ravuri</a></span></p>
     </div>
 
-    <script src="./JS/skillsTools.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <script src="./JS/smoothScroll.js"></script>
     <script src="./JS/skillsTools.js"></script>
     <script src="./JS/renderProjects.js" type="module"></script>
