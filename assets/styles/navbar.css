@@ -31,4 +31,8 @@
 .resume-btn:hover {
   border: 1px solid white;
   color: #ffbd39;
+}
+
+.navbar-nav a {
+  color: white;
 }/*# sourceMappingURL=navbar.css.map */

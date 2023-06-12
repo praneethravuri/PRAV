@@ -1,14 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const navLinks = document.querySelectorAll(".menu-items a");
+$(document).ready(function(){
+    $(".nav-link").click(function(){
+        let loc = $(this).attr("href");
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetSection = document.querySelector(link.getAttribute('href'));
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: "smooth"
-            });
-        });
+        if(loc === "#header-space"){
+            window.scrollTo(0, 0);
+        }
+        else{
+            $('html,body').animate({
+                scrollTop: $(`${loc}`).offset().top-100},
+                'slow');
+        }
+
     });
 });
