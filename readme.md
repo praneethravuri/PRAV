@@ -11,3 +11,5 @@
 Icons - [Icons8](https://icons8.com/)
 
 Animation - [Animate.css](https://animate.style/)
+
+Contact Form - [Formspree](https://formspree.io/)
