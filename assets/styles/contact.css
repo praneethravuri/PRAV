@@ -1,0 +1,41 @@
+.form-control {
+  background-color: black;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #00f5d0;
+  transition: all 0.3s ease 0s;
+  margin: 10px;
+  color: white;
+}
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  border-bottom: 1px solid #00f5d0;
+  color: white;
+}
+.form-control::-moz-placeholder {
+  color: #00f5d0;
+}
+.form-control::placeholder {
+  color: #00f5d0;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.shoot-btn {
+  background-color: #00f5d0;
+  padding: 10px 60px;
+  border: none;
+  margin: 40px;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+  color: black;
+}
+.shoot-btn:hover {
+  box-shadow: 5px 5px #00f5d0;
+  border: 1px solid #00f5d0;
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=contact.css.map */

@@ -53,4 +53,14 @@ ul a {
   font-size: 0.75rem;
   color: #00f5d0;
   border: none;
+}
+
+.footer-links {
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  font-size: 2rem;
+}
+.footer-links:hover {
+  border-bottom: 0.3rem solid #00f5d0;
 }/*# sourceMappingURL=footer.css.map */

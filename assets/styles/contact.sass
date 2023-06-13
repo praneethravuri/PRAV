@@ -1,0 +1,39 @@
+$inter-font: 'Inter', sans-serif
+$light-gray: rgba(255, 255, 255, 0.1)
+$turquoise-blue: #00f5d0
+
+.form-control
+    background-color: black
+    border-radius: 0px
+    border: none
+    border-bottom: 1px solid $turquoise-blue
+    transition: all 0.3s ease 0s
+    margin: 10px
+    color: white
+
+    &:focus
+        background-color: $light-gray
+        box-shadow: none
+        border-bottom: 1px solid $turquoise-blue
+        color: white
+    
+    &::placeholder
+        color: $turquoise-blue
+
+.form-container
+    text-align: center
+
+.shoot-btn
+    background-color: $turquoise-blue
+    padding: 10px 60px
+    border: none
+    margin: 40px
+    transition: all 0.3s ease 0s
+    font-weight: bold
+    color: black
+
+    &:hover
+        box-shadow: 5px 5px $turquoise-blue
+        border: 1px solid $turquoise-blue
+        background-color: black
+        color: white
