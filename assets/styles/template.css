@@ -18,7 +18,8 @@ body,
   font-family: "Inter", sans-serif;
   text-decoration: none;
   font-size: 1.25rem;
-  scroll-behavior: slow;
+  scrollbar-width: thin;
+  scrollbar-color: #00f5d0 rgba(255, 255, 255, 0.1);
 }
 
 body {
