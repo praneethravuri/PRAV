@@ -48,6 +48,8 @@ ul a {
 }
 .footer-note span {
   font-size: 0.75rem;
+  color: #00f5d0;
+  font-weight: bold;
 }
 .footer-note a {
   font-size: 0.75rem;
