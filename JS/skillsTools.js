@@ -1,12 +1,12 @@
 const skillsToolsList = [
   "Python",
   "C",
-  "C++",
   "HTML",
   "CSS",
   "Javascript",
   "Bootstrap",
   "Node JS",
+  "Express JS",
   "Flask",
   "JQuery",
   "Sass",
@@ -16,9 +16,9 @@ const skillsToolsList = [
   "Git",
   "GitHub",
   "VS Code",
-  "PyCharm",
   "JSONiq",
   "Zorba",
+  "C++",
 ];
 
 const skillsDiv = document.getElementById("skills-div");
