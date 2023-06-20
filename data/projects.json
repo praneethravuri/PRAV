@@ -5,6 +5,12 @@
     "languages": ["Javascript", "Sass", "CSS", "HTML", "Jquery", "Bootstrap"],
     "projectLink": "https://github.com/praneethravuri/PRAV"
   },
+  "Weatherly" : {
+    "year" : 2023,
+    "description" : "Weatherly is a user-friendly website that seamlessly integrates with Google Maps to provide you with accurate and up-to-date weather information for any location around the world ",
+    "languages" : ["Javascript", "CSS", "HTML", "Jquery", "Bootstrap"],
+    "projectLink" : "https://elegant-kleicha-0bdc60.netlify.app/"
+  },
   "Invespo": {
     "year": 2023,
     "description": "Invespo: A stock trading front-end for SWE 632 course @ George Mason Univ. Built with HTML, CSS, JS, jQuery. Explores interface design principles in user-centric design. ",
