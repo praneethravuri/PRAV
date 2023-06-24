@@ -1,8 +1,6 @@
 # PRAV - Personal Portfolio Website
 
-[Website Link](https://prav.dev/)
-
-[Netlify Link](https://snazzy-cocada-b041d4.netlify.app/)
+[Netlify Link](https://prav-v1.netlify.app/)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
